@@ -5,7 +5,7 @@ import com.dorvak.riotapi.api.MatchAPI;
 import com.dorvak.riotapi.api.RiotAPI;
 import com.dorvak.riotapi.http.Endpoint;
 import com.dorvak.riotapi.http.HttpRequestProcessor;
-import com.dorvak.riotapi.model.tft.match.TFTMatch;
+import com.dorvak.riotapi.model.games.tft.match.TFTMatch;
 
 import java.time.Instant;
 import java.util.Arrays;

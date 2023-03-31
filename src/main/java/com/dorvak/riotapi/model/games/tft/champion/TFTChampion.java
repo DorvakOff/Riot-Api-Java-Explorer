@@ -1,7 +1,7 @@
-package com.dorvak.riotapi.model.tft.champion;
+package com.dorvak.riotapi.model.games.tft.champion;
 
 
-import com.dorvak.riotapi.model.RiotData;
+import com.dorvak.riotapi.model.shared.RiotData;
 
 public class TFTChampion extends RiotData {
 

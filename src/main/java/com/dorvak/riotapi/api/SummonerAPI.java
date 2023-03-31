@@ -1,6 +1,6 @@
 package com.dorvak.riotapi.api;
 
-import com.dorvak.riotapi.model.Summoner;
+import com.dorvak.riotapi.model.games.common.Summoner;
 
 public interface SummonerAPI {
 

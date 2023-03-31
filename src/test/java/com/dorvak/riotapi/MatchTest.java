@@ -1,8 +1,8 @@
 package com.dorvak.riotapi;
 
 import com.dorvak.riotapi.api.GameRegion;
-import com.dorvak.riotapi.model.tft.match.Participant;
-import com.dorvak.riotapi.model.tft.match.TFTMatch;
+import com.dorvak.riotapi.model.games.tft.match.Participant;
+import com.dorvak.riotapi.model.games.tft.match.TFTMatch;
 import com.dorvak.riotapi.utils.MatchUtils;
 import com.dorvak.riotapi.utils.PrintUtils;
 import org.junit.jupiter.api.DisplayName;

@@ -1,4 +1,4 @@
-package com.dorvak.riotapi.model;
+package com.dorvak.riotapi.model.shared;
 
 public class Image{
     public String full;

@@ -2,12 +2,12 @@ package com.dorvak.riotapi.http;
 
 import com.dorvak.riotapi.api.RiotAPI;
 import com.dorvak.riotapi.api.impl.SummonerImpl;
-import com.dorvak.riotapi.model.tft.augment.TFTAugmentList;
-import com.dorvak.riotapi.model.tft.augment.hero.TFTHeroAugmentList;
-import com.dorvak.riotapi.model.tft.champion.TFTChampionList;
-import com.dorvak.riotapi.model.tft.item.TFTItemList;
-import com.dorvak.riotapi.model.tft.match.TFTMatch;
-import com.dorvak.riotapi.model.tft.trait.TFTTraitList;
+import com.dorvak.riotapi.model.games.tft.augment.TFTAugmentList;
+import com.dorvak.riotapi.model.games.tft.augment.hero.TFTHeroAugmentList;
+import com.dorvak.riotapi.model.games.tft.champion.TFTChampionList;
+import com.dorvak.riotapi.model.games.tft.item.TFTItemList;
+import com.dorvak.riotapi.model.games.tft.match.TFTMatch;
+import com.dorvak.riotapi.model.games.tft.trait.TFTTraitList;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;

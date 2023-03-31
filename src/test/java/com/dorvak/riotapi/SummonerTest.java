@@ -2,7 +2,7 @@ package com.dorvak.riotapi;
 
 import com.dorvak.riotapi.api.GameRegion;
 import com.dorvak.riotapi.http.Endpoint;
-import com.dorvak.riotapi.model.Summoner;
+import com.dorvak.riotapi.model.games.common.Summoner;
 import com.dorvak.riotapi.utils.PrintUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

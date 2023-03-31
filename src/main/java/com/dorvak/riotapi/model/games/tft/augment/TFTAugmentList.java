@@ -1,7 +1,7 @@
-package com.dorvak.riotapi.model.tft.augment;
+package com.dorvak.riotapi.model.games.tft.augment;
 
-import com.dorvak.riotapi.model.RiotData;
-import com.dorvak.riotapi.model.RiotDataList;
+import com.dorvak.riotapi.model.shared.RiotData;
+import com.dorvak.riotapi.model.shared.RiotDataList;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 public class TFTAugmentList extends RiotDataList<TFTAugment> {

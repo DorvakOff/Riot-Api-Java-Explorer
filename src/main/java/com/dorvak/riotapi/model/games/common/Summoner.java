@@ -1,4 +1,4 @@
-package com.dorvak.riotapi.model;
+package com.dorvak.riotapi.model.games.common;
 
 import com.dorvak.riotapi.api.GameRegion;
 import com.dorvak.riotapi.api.RiotAPI;

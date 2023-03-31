@@ -1,4 +1,4 @@
-package com.dorvak.riotapi.model;
+package com.dorvak.riotapi.model.shared;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package com.dorvak.riotapi.model.tft.match;
+package com.dorvak.riotapi.model.games.tft.match;
 
 public class TFTMatch {
     private MatchMetadata metadata;

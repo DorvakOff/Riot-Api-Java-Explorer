@@ -1,4 +1,4 @@
-package com.dorvak.riotapi.model.tft.match;
+package com.dorvak.riotapi.model.games.tft.match;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 

@@ -1,7 +1,7 @@
 package com.dorvak.riotapi.utils;
 
-import com.dorvak.riotapi.model.tft.match.Participant;
-import com.dorvak.riotapi.model.tft.match.TFTMatch;
+import com.dorvak.riotapi.model.games.tft.match.Participant;
+import com.dorvak.riotapi.model.games.tft.match.TFTMatch;
 
 public class MatchUtils {
 

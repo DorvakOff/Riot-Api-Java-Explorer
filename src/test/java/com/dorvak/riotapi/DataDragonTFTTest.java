@@ -1,11 +1,11 @@
 package com.dorvak.riotapi;
 
 import com.dorvak.riotapi.http.Endpoint;
-import com.dorvak.riotapi.model.tft.augment.TFTAugmentList;
-import com.dorvak.riotapi.model.tft.augment.hero.TFTHeroAugmentList;
-import com.dorvak.riotapi.model.tft.champion.TFTChampionList;
-import com.dorvak.riotapi.model.tft.item.TFTItemList;
-import com.dorvak.riotapi.model.tft.trait.TFTTraitList;
+import com.dorvak.riotapi.model.games.tft.augment.TFTAugmentList;
+import com.dorvak.riotapi.model.games.tft.augment.hero.TFTHeroAugmentList;
+import com.dorvak.riotapi.model.games.tft.champion.TFTChampionList;
+import com.dorvak.riotapi.model.games.tft.item.TFTItemList;
+import com.dorvak.riotapi.model.games.tft.trait.TFTTraitList;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -2,7 +2,7 @@ package com.dorvak.riotapi.api.impl;
 
 import com.dorvak.riotapi.api.GameRegion;
 import com.dorvak.riotapi.api.RiotAPI;
-import com.dorvak.riotapi.model.Summoner;
+import com.dorvak.riotapi.model.games.common.Summoner;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.dorvak.riotapi.api;
 
-import com.dorvak.riotapi.model.tft.match.TFTMatch;
+import com.dorvak.riotapi.model.games.tft.match.TFTMatch;
 
 import java.time.Instant;
 import java.util.List;
