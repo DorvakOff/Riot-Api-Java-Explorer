@@ -4,6 +4,8 @@ import com.dorvak.riotapi.api.impl.RiotAPIImpl;
 
 public abstract class RiotAPI {
 
+    public static String DATA_DRAGON_URL = "https://ddragon.leagueoflegends.com/";
+    public static String RIOT_API_URL = "https://{region}.api.riotgames.com/";
     public static Builder builder() {
         return new Builder();
     }
@@ -13,6 +15,12 @@ public abstract class RiotAPI {
     }
 
     public abstract DataDragonAPI getDataDragonAPI();
+
+    public abstract SummonerAPI getSummonerAPI();
+
+    public abstract MatchAPI getMatchAPI();
+
+    public abstract String getApiKey();
 
     public static class Builder {
         private String apiKey;

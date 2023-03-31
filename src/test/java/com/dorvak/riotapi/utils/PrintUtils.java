@@ -1,7 +1,5 @@
 package com.dorvak.riotapi.utils;
 
-import com.dorvak.riotapi.DataDragonTest;
-import com.dorvak.riotapi.TestSecrets;
 import com.dorvak.riotapi.http.Endpoint;
 
 public class PrintUtils {
@@ -21,6 +19,6 @@ public class PrintUtils {
     }
 
     public static void print(Endpoint endpoint) {
-        System.out.println(endpoint.getFullUrl(DataDragonTest.version, TestSecrets.LOCALE));
+        System.out.println(endpoint.getFullUrl("{version}", "{locale}").replace("%7B", "{").replace("%7D", "}"));
     }
 }

@@ -3,9 +3,11 @@ package com.dorvak.riotapi.http;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.net.URI;
+import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,8 +29,25 @@ public class HttpRequestProcessor {
                 params = new HashMap<>();
             }
 
+            params = new HashMap<>(params);
+
+            StringBuilder queryParams = new StringBuilder();
+            for (String queryParam : endpoint.getQueryParams()) {
+                String param = params.getOrDefault(queryParam, "");
+                if (!param.trim().isEmpty()) {
+                    if (queryParams.isEmpty()) {
+                        queryParams.append("?");
+                    } else {
+                        queryParams.append("&");
+                    }
+                    queryParams.append(queryParam);
+                    queryParams.append("=");
+                    queryParams.append(URLEncoder.encode(param, StandardCharsets.UTF_8));
+                }
+            }
+
             HttpRequest.Builder builder = HttpRequest.newBuilder()
-                    .uri(URI.create(endpoint.getFullUrl(version, locale, params)));
+                    .uri(URI.create(endpoint.getFullUrl(version, locale, params) + queryParams));
 
             if (endpoint.isAuthRequired()) {
                 builder.header(X_RIOT_TOKEN, apiKey);
@@ -50,5 +69,9 @@ public class HttpRequestProcessor {
 
     public <T> T processRequest(Endpoint endpoint) {
         return processRequest(endpoint, null, null, new HashMap<>());
+    }
+
+    public <T> T processRequest(Endpoint endpoint, Map<String, String> params) {
+        return processRequest(endpoint, params.get("version"), params.get("locale"), params);
     }
 }

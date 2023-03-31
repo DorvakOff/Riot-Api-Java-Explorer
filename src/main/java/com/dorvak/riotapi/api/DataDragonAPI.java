@@ -10,8 +10,6 @@ import java.util.List;
 
 public interface DataDragonAPI {
 
-    String DATA_DRAGON_URL = "https://ddragon.leagueoflegends.com/";
-
     TFTChampionList getTFTChampionList(String version, String locale);
 
     List<String> getVersions();
@@ -23,4 +21,6 @@ public interface DataDragonAPI {
     TFTAugmentList getTFTAugmentList(String version, String locale);
 
     TFTHeroAugmentList getTFTHeroAugmentList(String version, String locale);
+
+    RiotAPI getRiotAPI();
 }

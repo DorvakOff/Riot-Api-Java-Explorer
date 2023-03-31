@@ -1,6 +1,7 @@
 package com.dorvak.riotapi.api.impl;
 
 import com.dorvak.riotapi.api.DataDragonAPI;
+import com.dorvak.riotapi.api.RiotAPI;
 import com.dorvak.riotapi.http.Endpoint;
 import com.dorvak.riotapi.http.HttpRequestProcessor;
 import com.dorvak.riotapi.model.tft.augment.TFTAugmentList;
@@ -15,8 +16,8 @@ import java.util.List;
 public class DataDragonAPIImpl implements DataDragonAPI {
     private final HttpRequestProcessor requestProcessor;
 
-    public DataDragonAPIImpl(String apiKey) {
-        this.requestProcessor = new HttpRequestProcessor(apiKey);
+    public DataDragonAPIImpl(RiotAPIImpl api) {
+        this.requestProcessor = new HttpRequestProcessor(api.getApiKey());
     }
 
     @Override
@@ -47,5 +48,10 @@ public class DataDragonAPIImpl implements DataDragonAPI {
     @Override
     public TFTHeroAugmentList getTFTHeroAugmentList(String version, String locale) {
         return requestProcessor.processRequest(Endpoint.DATA_DRAGON_TFT_HERO_AUGMENTS, version, locale);
+    }
+
+    @Override
+    public RiotAPI getRiotAPI() {
+        return null;
     }
 }
